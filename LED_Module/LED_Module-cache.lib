@@ -1,11 +1,11 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Conn_01x04
+# LED_Module-rescue_Conn_01x04-LED_Module-rescue
 #
-DEF Conn_01x04 J 0 40 Y N 1 F N
+DEF LED_Module-rescue_Conn_01x04-LED_Module-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x04" 0 -300 50 H V C CNN
+F1 "LED_Module-rescue_Conn_01x04-LED_Module-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -29,11 +29,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x05
+# LED_Module-rescue_Conn_01x05-LED_Module-rescue
 #
-DEF Conn_01x05 J 0 40 Y N 1 F N
+DEF LED_Module-rescue_Conn_01x05-LED_Module-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Conn_01x05" 0 -300 50 H V C CNN
+F1 "LED_Module-rescue_Conn_01x05-LED_Module-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -59,11 +59,11 @@ X Pin_5 5 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_02x04_Odd_Even
+# LED_Module-rescue_Conn_02x04_Odd_Even-LED_Module-rescue
 #
-DEF Conn_02x04_Odd_Even J 0 40 Y N 1 F N
+DEF LED_Module-rescue_Conn_02x04_Odd_Even-LED_Module-rescue J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
+F1 "LED_Module-rescue_Conn_02x04_Odd_Even-LED_Module-rescue" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -95,16 +95,15 @@ X Pin_8 8 300 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# D_Schottky
+# LED_Module-rescue_D_Schottky-device
 #
-DEF D_Schottky D 0 40 N N 1 F N
+DEF LED_Module-rescue_D_Schottky-device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "D_Schottky" 0 -100 50 H V C CNN
+F1 "LED_Module-rescue_D_Schottky-device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -118,11 +117,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# GND
+# LED_Module-rescue_GND-power1
 #
-DEF GND #PWR 0 0 Y Y 1 F P
+DEF LED_Module-rescue_GND-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND" 0 -150 50 H V C CNN
+F1 "LED_Module-rescue_GND-power1" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -131,15 +130,17 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# LED
+# LED_Module-rescue_LED-device
 #
-DEF LED D 0 40 Y N 1 F N
+DEF LED_Module-rescue_LED-device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "LED" 0 -100 50 H V C CNN
+F1 "LED_Module-rescue_LED-device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  LED*
+ LED_SMD:*
+ LED_THT:*
 $ENDFPLIST
 DRAW
 P 2 0 1 8 -50 -50 -50 50 N
@@ -152,11 +153,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Q_NPN_BCEC
+# LED_Module-rescue_Q_NPN_BCEC-device
 #
-DEF Q_NPN_BCEC Q 0 0 Y N 1 F N
+DEF LED_Module-rescue_Q_NPN_BCEC-device Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Q_NPN_BCEC" 200 -50 50 H V L CNN
+F1 "LED_Module-rescue_Q_NPN_BCEC-device" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -173,15 +174,14 @@ X C 4 200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R
+# LED_Module-rescue_R-device
 #
-DEF R R 0 0 N Y 1 F N
+DEF LED_Module-rescue_R-device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "LED_Module-rescue_R-device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
  R_*
 $ENDFPLIST
 DRAW
