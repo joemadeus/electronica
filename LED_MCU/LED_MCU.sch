@@ -25,9 +25,9 @@ F 3 "" H 1750 5000 50  0001 C CNN
 	1    1750 5000
 	-1   0    0    -1  
 $EndComp
-Text Label 7800 3150 0    50   ~ 0
+Text Label 7800 4150 0    50   ~ 0
 SDA
-Text Label 7800 3250 0    50   ~ 0
+Text Label 7800 4250 0    50   ~ 0
 SCL
 Text Label 7800 4350 0    50   ~ 0
 D-
@@ -364,26 +364,7 @@ F 3 "" H 10100 5250 50  0001 C CNN
 	1    10100 5250
 	1    0    0    -1  
 $EndComp
-Text Label 10300 3300 2    50   ~ 0
-ADDL_R
-Text Label 10300 4050 2    50   ~ 0
-ADDL_G
-Text Label 10300 4800 2    50   ~ 0
-ADDL_B
-Wire Wire Line
-	10300 3300 10300 3350
-Connection ~ 10300 3350
-Wire Wire Line
-	10300 4050 10300 4100
-Connection ~ 10300 4100
-Wire Wire Line
-	10300 4800 10300 4850
-Connection ~ 10300 4850
 Connection ~ 10900 4100
-Wire Wire Line
-	10900 3350 10900 3550
-Wire Wire Line
-	10900 4100 10900 4300
 Wire Notes Line style dotted
 	9000 5500 11200 5500
 Text Notes 9250 3100 2    50   ~ 10
@@ -394,7 +375,7 @@ Text Label 8450 2050 0    50   ~ 0
 AREF
 Wire Wire Line
 	7650 2050 8300 2050
-Text Label 7800 1950 0    50   ~ 0
+Text Label 7800 2550 0    50   ~ 0
 LED_W
 Text Label 7800 2250 0    50   ~ 0
 LED_R
@@ -402,8 +383,6 @@ Text Label 7800 2450 0    50   ~ 0
 LED_B
 Text Label 7800 2350 0    50   ~ 0
 LED_G
-Wire Wire Line
-	7650 1950 7800 1950
 Wire Wire Line
 	7800 2250 7650 2250
 Wire Wire Line
@@ -428,12 +407,12 @@ D-
 $Comp
 L power:GND #PWR01
 U 1 1 5C163AB7
-P 800 1450
-F 0 "#PWR01" H 800 1200 50  0001 C CNN
-F 1 "GND" H 805 1277 50  0000 C CNN
-F 2 "" H 800 1450 50  0001 C CNN
-F 3 "" H 800 1450 50  0001 C CNN
-	1    800  1450
+P 900 1450
+F 0 "#PWR01" H 900 1200 50  0001 C CNN
+F 1 "GND" H 905 1277 50  0000 C CNN
+F 2 "" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0001 C CNN
+	1    900  1450
 	1    0    0    -1  
 $EndComp
 Wire Notes Line style dotted
@@ -549,7 +528,7 @@ U 1 1 5C17FC81
 P 1250 1900
 F 0 "R2" V 1043 1900 50  0000 C CNN
 F 1 "10k" V 1134 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1180 1900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 1900 50  0001 C CNN
 F 3 "~" H 1250 1900 50  0001 C CNN
 	1    1250 1900
 	0    1    1    0   
@@ -658,7 +637,7 @@ U 1 1 5C1C7FA8
 P 1700 850
 F 0 "D1" H 1700 634 50  0000 C CNN
 F 1 "D_USB" H 1700 725 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_KathodeUp" H 1700 850 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1700 850 50  0001 C CNN
 F 3 "~" H 1700 850 50  0001 C CNN
 	1    1700 850 
 	-1   0    0    1   
@@ -669,7 +648,7 @@ U 1 1 5C1C80DD
 P 1700 1250
 F 0 "D2" H 1700 1034 50  0000 C CNN
 F 1 "D_BAT" H 1700 1125 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P2.54mm_Vertical_KathodeUp" H 1700 1250 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1700 1250 50  0001 C CNN
 F 3 "~" H 1700 1250 50  0001 C CNN
 	1    1700 1250
 	-1   0    0    1   
@@ -787,7 +766,7 @@ U 1 1 5C1227E9
 P 6650 3550
 F 0 "U1" H 5800 1400 50  0000 C CNN
 F 1 "ATSAMD21G16B-AU" H 5800 1300 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 7950 5650 50  0001 C CNN
+F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7950 5650 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 6650 3550 50  0001 C CNN
 	1    6650 3550
 	1    0    0    -1  
@@ -799,17 +778,13 @@ Wire Wire Line
 Connection ~ 2050 850 
 Wire Wire Line
 	2050 900  2050 850 
-Wire Wire Line
-	7650 3150 7800 3150
-Wire Wire Line
-	7800 3250 7650 3250
 $Comp
 L Device:D_TVS D3
 U 1 1 5C35D143
 P 2050 1050
 F 0 "D3" V 2004 1129 50  0000 L CNN
 F 1 "D_TVS" V 2095 1129 50  0000 L CNN
-F 2 "Diode_THT:D_DO-201AD_P3.81mm_Vertical_KathodeUp" H 2050 1050 50  0001 C CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 2050 1050 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88378/sa50athrusa170ca.pdf" H 2050 1050 50  0001 C CNN
 	1    2050 1050
 	0    1    1    0   
@@ -877,60 +852,43 @@ V_BUS
 $Comp
 L Device:LED LED_O1
 U 1 1 5C36F2A3
-P 1900 3500
-F 0 "LED_O1" H 1891 3716 50  0000 C CNN
-F 1 "LED_CHG" H 1891 3625 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 1900 3500 50  0001 C CNN
-F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493867/LO%20R976.pdf" H 1900 3500 50  0001 C CNN
-	1    1900 3500
+P 2000 3500
+F 0 "LED_O1" H 1991 3716 50  0000 C CNN
+F 1 "LED_CHG" H 1991 3625 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Castellated" H 2000 3500 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-2493867/LO%20R976.pdf" H 2000 3500 50  0001 C CNN
+	1    2000 3500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5C370A67
-P 2050 4050
-F 0 "R4" H 2120 4096 50  0000 L CNN
-F 1 "1k" H 2120 4005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1980 4050 50  0001 C CNN
-F 3 "~" H 2050 4050 50  0001 C CNN
-	1    2050 4050
-	1    0    0    -1  
+P 2000 3900
+F 0 "R4" H 2070 3946 50  0000 L CNN
+F 1 "1k" H 2070 3855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1930 3900 50  0001 C CNN
+F 3 "~" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	750  3500 1400 3500
 Connection ~ 1400 3500
 Wire Wire Line
-	1400 3500 1750 3500
+	1400 3500 1850 3500
 Text Label 2550 3700 0    50   ~ 0
 V_BAT
-Wire Wire Line
-	1800 3700 2250 3700
 $Comp
 L Device:C C7
 U 1 1 5C3A6BA9
-P 2250 3850
-F 0 "C7" H 2365 3896 50  0000 L CNN
-F 1 "10uF" H 2365 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2288 3700 50  0001 C CNN
-F 3 "~" H 2250 3850 50  0001 C CNN
-	1    2250 3850
+P 2300 3850
+F 0 "C7" H 2415 3896 50  0000 L CNN
+F 1 "10uF" H 2415 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2338 3700 50  0001 C CNN
+F 3 "~" H 2300 3850 50  0001 C CNN
+	1    2300 3850
 	1    0    0    -1  
 $EndComp
-Connection ~ 2250 3700
-Wire Wire Line
-	2250 3700 2550 3700
-Wire Wire Line
-	2250 4000 2250 4200
-Wire Wire Line
-	2050 4200 2250 4200
-Wire Wire Line
-	2050 3500 2050 3900
-Connection ~ 2050 3900
-Connection ~ 2050 4200
-Wire Wire Line
-	1800 3900 2050 3900
-Wire Wire Line
-	1400 4200 2050 4200
 Wire Notes Line style dotted
 	500  3200 2900 3200
 Wire Notes Line style dotted
@@ -984,70 +942,33 @@ F 3 "~" H 10350 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J3
+L Connector_Generic:Conn_02x04_Odd_Even J3
 U 1 1 5C42931F
 P 10050 6100
-F 0 "J3" H 10100 6617 50  0000 C CNN
-F 1 "ADDL_LED" H 10100 6526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10050 6100 50  0001 C CNN
+F 0 "J3" H 10100 6450 50  0000 C CNN
+F 1 "ADDL_LED" H 10100 6350 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical" H 10050 6100 50  0001 C CNN
 F 3 "~" H 10050 6100 50  0001 C CNN
 	1    10050 6100
 	1    0    0    -1  
 $EndComp
-Text Label 10800 2350 2    50   ~ 0
-ADDL_W_V
-Wire Wire Line
-	10800 2350 10800 1950
 Connection ~ 10800 1950
-Text Label 10800 3550 2    50   ~ 0
-ADDL_R_V
-Text Label 10800 4300 2    50   ~ 0
-ADDL_G_V
-Text Label 10800 5050 2    50   ~ 0
-ADDL_B_V
-Wire Wire Line
-	10900 5050 10900 4850
-Connection ~ 10900 4850
-Text Label 10350 6400 0    50   ~ 0
-ADDL_B_V
 Text Label 10350 6300 0    50   ~ 0
-ADDL_G_V
+V_LED
 Text Label 10350 6200 0    50   ~ 0
-ADDL_R_V
-Text Label 9850 6400 2    50   ~ 0
-ADDL_B
-Text Label 9850 6300 2    50   ~ 0
-ADDL_G
-Text Label 9850 6200 2    50   ~ 0
-ADDL_R
+V_LED
 Text Label 10350 6100 0    50   ~ 0
-ADDL_W_V
+V_LED
 Text Label 10350 6000 0    50   ~ 0
-ADDL_W_V
-Text Label 10350 5900 0    50   ~ 0
-ADDL_W_V
-Text Label 10350 5800 0    50   ~ 0
-ADDL_W_V
+V_LED
 Text Label 9850 6100 2    50   ~ 0
 ADDL_W
 Text Label 9850 6000 2    50   ~ 0
 ADDL_W
-Text Label 9850 5900 2    50   ~ 0
+Text Label 9850 6300 2    50   ~ 0
 ADDL_W
-Text Label 9850 5800 2    50   ~ 0
+Text Label 9850 6200 2    50   ~ 0
 ADDL_W
-Wire Wire Line
-	10800 3550 10900 3550
-Connection ~ 10900 3550
-Wire Wire Line
-	10900 3550 10900 4100
-Wire Wire Line
-	10800 4300 10900 4300
-Connection ~ 10900 4300
-Wire Wire Line
-	10900 4300 10900 4850
-Wire Wire Line
-	10800 5050 10900 5050
 $Comp
 L Device:R R3
 U 1 1 5C4A0DA5
@@ -1178,17 +1099,17 @@ U 1 1 5C73609E
 P 8300 3250
 F 0 "J_I2C1" H 8220 3567 50  0000 C CNN
 F 1 "Conn_01x04" H 8220 3476 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P3.175mm_Drill0.8mm" H 8300 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical" H 8300 3250 50  0001 C CNN
 F 3 "~" H 8300 3250 50  0001 C CNN
 	1    8300 3250
 	-1   0    0    -1  
 $EndComp
-Text Label 8500 3150 0    50   ~ 0
-SDA
 Text Label 8500 3250 0    50   ~ 0
+SDA
+Text Label 8500 3150 0    50   ~ 0
 SCL
 Text Label 8500 3350 0    50   ~ 0
-3V3
+VDD
 Text Label 8500 3450 0    50   ~ 0
 GND
 $Comp
@@ -1197,7 +1118,7 @@ U 1 1 5C73896F
 P 8300 1550
 F 0 "J_ANA1" H 8220 1967 50  0000 C CNN
 F 1 "Conn_01x04" H 8220 1876 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P3.175mm_Drill0.8mm" H 8300 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 8300 1550 50  0001 C CNN
 F 3 "~" H 8300 1550 50  0001 C CNN
 	1    8300 1550
 	-1   0    0    -1  
@@ -1206,10 +1127,10 @@ Text Label 8500 1350 0    50   ~ 0
 A0
 Text Label 8500 1450 0    50   ~ 0
 A1
-Text Label 8500 1650 0    50   ~ 0
-3V3
 Text Label 8500 1750 0    50   ~ 0
-GND
+VDDANA
+Text Label 8500 1650 0    50   ~ 0
+GNDANA
 Text Label 7800 1750 0    50   ~ 0
 A0
 Text Label 7800 1850 0    50   ~ 0
@@ -1236,7 +1157,7 @@ U 1 1 5C813C6C
 P 5250 1700
 F 0 "J_RESET1" H 5330 1692 50  0000 L CNN
 F 1 "Conn_01x02" H 5330 1601 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 5250 1700 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 5250 1700 50  0001 C CNN
 F 3 "~" H 5250 1700 50  0001 C CNN
 	1    5250 1700
 	1    0    0    -1  
@@ -1245,4 +1166,87 @@ Text Label 5050 1700 2    50   ~ 0
 RESET
 Text Label 5050 1800 2    50   ~ 0
 GND
+Wire Wire Line
+	7650 4150 7800 4150
+Wire Wire Line
+	7650 4250 7800 4250
+Text Label 10700 2500 2    50   ~ 0
+V_LED
+Wire Wire Line
+	10700 2500 10800 2500
+Wire Wire Line
+	10800 1950 10800 2500
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5C19B5BC
+P 1550 6450
+F 0 "H4" H 1650 6501 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1650 6410 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 1550 6450 50  0001 C CNN
+F 3 "~" H 1550 6450 50  0001 C CNN
+	1    1550 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5C19B6A7
+P 650 6450
+F 0 "H3" H 750 6501 50  0000 L CNN
+F 1 "MountingHole_Pad" H 750 6410 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad" H 650 6450 50  0001 C CNN
+F 3 "~" H 650 6450 50  0001 C CNN
+	1    650  6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C19B86B
+P 650 6200
+F 0 "H1" H 750 6246 50  0000 L CNN
+F 1 "MountingHole" H 750 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 650 6200 50  0001 C CNN
+F 3 "~" H 650 6200 50  0001 C CNN
+	1    650  6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C19B97E
+P 1550 6200
+F 0 "H2" H 1650 6246 50  0000 L CNN
+F 1 "MountingHole" H 1650 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm" H 1550 6200 50  0001 C CNN
+F 3 "~" H 1550 6200 50  0001 C CNN
+	1    1550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 4100 10900 4850
+Wire Wire Line
+	10900 3350 10900 4100
+Wire Wire Line
+	7800 2550 7650 2550
+Wire Wire Line
+	1800 3700 2300 3700
+Wire Wire Line
+	1400 4200 2300 4200
+Wire Wire Line
+	2300 4000 2300 4200
+Wire Wire Line
+	2150 3500 2150 3900
+Wire Wire Line
+	1800 3900 1850 3900
+Connection ~ 2300 3700
+Wire Wire Line
+	2300 3700 2550 3700
+Text Label 1200 850  0    50   ~ 0
+V_USB
+Text Label 6250 1250 2    50   ~ 0
+VDDANA
+Text Label 6450 5750 2    50   ~ 0
+GNDANA
+Text Label 5500 3550 2    50   ~ 0
+BAT_ALERT
+Wire Wire Line
+	5500 3550 5650 3550
 $EndSCHEMATC
