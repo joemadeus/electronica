@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX17055ETB
+D A low operating current fuel gauge that implements Maxim ModelGauge™ m5 EZ algorithm
+K battery fuel gauge ModelGauge
+F https://datasheets.maximintegrated.com/en/ds/MAX17055.pdf
+$ENDCMP
+#
+#End Doc Library

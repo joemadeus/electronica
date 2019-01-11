@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSAMD21G16B-AU
+D SAM D21 Microchip  Low-Power, 32-bit Cortex-M0+ MCU with Advanced Analog and PWM
+K 32-bit ARM Cortex-0+ MCU Microcontroller
+F http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf
+$ENDCMP
+#
+#End Doc Library
