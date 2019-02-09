@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/joseph.rose/Development/electronica/USB_Power_Filter/USB_Power_Filter.sch)
-    (date "Monday, December 03, 2018 at 01:43:24 PM")
+    (date "Saturday, February 09, 2019 at 05:45:28 PM")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -16,8 +16,8 @@
         (comment (number 4) (value "")))))
   (components
     (comp (ref C1)
-      (value UCL1E100MCL)
-      (footprint Capacitor_SMD:CP_Elec_4x5.8)
+      (value 100u)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.50mm)
       (datasheet ~)
       (libsource (lib Device) (part CP) (description "Polarized capacitor"))
       (sheetpath (names /) (tstamps /))
@@ -59,7 +59,7 @@
       (tstamp 5B5E189A))
     (comp (ref POWER_IN1)
       (value Conn_01x02_Female)
-      (footprint Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1mm)
+      (footprint Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x02_Female) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))
@@ -80,7 +80,7 @@
       (tstamp 5B60C803))
     (comp (ref SHIELD1)
       (value Conn_01x01_Female)
-      (footprint Connector_Wire:SolderWirePad_1x01_Drill1mm)
+      (footprint Connector_Wire:SolderWirePad_1x01_Drill0.8mm)
       (datasheet ~)
       (libsource (lib Connector) (part Conn_01x01_Female) (description "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /) (tstamps /))

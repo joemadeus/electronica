@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USB_Power_Filter-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,8 +19,8 @@ L Device:CP C1
 U 1 1 5B5E11CC
 P 5700 3600
 F 0 "C1" H 5650 3250 50  0000 L CNN
-F 1 "UCL1E100MCL" H 5400 3350 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.8" H 5738 3450 50  0001 C CNN
+F 1 "100u" H 5400 3350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5738 3450 50  0001 C CNN
 F 3 "~" H 5700 3600 50  0001 C CNN
 	1    5700 3600
 	1    0    0    -1  
@@ -85,7 +86,7 @@ U 1 1 5B5E2D8E
 P 5250 3100
 F 0 "POWER_IN1" V 5400 3100 50  0000 C CNN
 F 1 "Conn_01x02_Female" V 5300 3100 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1mm" H 5250 3100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5250 3100 50  0001 C CNN
 F 3 "~" H 5250 3100 50  0001 C CNN
 	1    5250 3100
 	0    1    -1   0   
@@ -144,7 +145,7 @@ U 1 1 5B6334EE
 P 4600 4400
 F 0 "SHIELD1" V 4447 4448 50  0000 L CNN
 F 1 "Conn_01x01_Female" V 4538 4448 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 4600 4400 50  0001 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 4600 4400 50  0001 C CNN
 F 3 "~" H 4600 4400 50  0001 C CNN
 	1    4600 4400
 	0    1    1    0   
