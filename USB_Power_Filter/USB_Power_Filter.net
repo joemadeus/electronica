@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/joseph.rose/Development/electronica/USB_Power_Filter/USB_Power_Filter.sch)
-    (date "Saturday, February 09, 2019 at 05:45:28 PM")
+    (date "Wednesday, February 20, 2019 at 12:37:05 PM")
     (tool "Eeschema (5.0.1-3-g963ef8bb5)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -38,7 +38,7 @@
       (tstamp 5B5E124E))
     (comp (ref D1)
       (value D_TVS)
-      (footprint Diode_SMD:D_SMB_Handsoldering)
+      (footprint Diode_SMD:D_SOD-323_HandSoldering)
       (datasheet ~)
       (libsource (lib Device) (part D_TVS) (description "Bidirectional transient-voltage-suppression diode"))
       (sheetpath (names /) (tstamps /))
