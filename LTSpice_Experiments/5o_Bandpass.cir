@@ -1,0 +1,17 @@
+.title 5-o Bandpass
+V1 VIN 0 ac 3.3 0
+R1 Net-_C1-Pad1_ VIN 50
+L1 Net-_C1-Pad1_ 0 79.48n
+C1 Net-_C1-Pad1_ 0 22p
+L2 Net-_C2-Pad1_ Net-_C3-Pad1_ 22n
+C2 Net-_C2-Pad1_ Net-_C1-Pad1_ 2.1p
+L3 Net-_C3-Pad1_ 0 3.6n
+C3 Net-_C3-Pad1_ 0 22p
+L4 Net-_C4-Pad1_ VOUT 22n
+C4 Net-_C4-Pad1_ Net-_C3-Pad1_ 1.3p
+L5 VOUT 0 79.48n
+C5 VOUT 0 12.14p
+R2 0 VOUT 50
+.ac lin 100000 100MEG 750MEG
+.net V(VOUT) V1
+.end

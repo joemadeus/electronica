@@ -1,0 +1,23 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ 0 128.8p
+L1 Net-_C1-Pad1_ 0 7.495n
+C2 Net-_C2-Pad1_ Net-_C1-Pad1_ 1.070p
+L2 Net-_C2-Pad1_ Net-_C3-Pad1_ 902.1n
+C3 Net-_C3-Pad1_ 0 521.4p
+L3 Net-_C3-Pad1_ 0 1.851n
+C4 Net-_C4-Pad1_ Net-_C3-Pad1_ 0.6671p
+L4 Net-_C4-Pad1_ Net-_C5-Pad1_ 1.447u
+C5 Net-_C5-Pad1_ 0 521.4p
+L5 Net-_C5-Pad1_ 0 1.851n
+C6 Net-_C6-Pad1_ Net-_C5-Pad1_ 1.070p
+L6 Net-_C6-Pad1_ VOUT 902.1n
+C7 VOUT 0 128.8p
+L7 VOUT 0 7.495n
+
+R1 Net-_C1-Pad1_ VIN 50
+R2 0 VOUT 50
+V1 VIN 0 ac 3.3 0
+
+.ac lin 100000 100MEG 750MEG
+.net V(VOUT) V1
+.end

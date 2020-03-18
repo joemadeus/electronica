@@ -1,0 +1,12 @@
+.title 10.7 Quad Demod
+VIN  LO  IIP SINE (0.0 3.3 10.7MEG)
+R0   IIP 1 330
+C8   1   2 4.7p
+L1   2   3 5.6u
+C7   2   3 38p
+R1   2   3 22k
+C9   3   0 0.1u
+VOUT 2   OIP
+R3   OIP 0 330
+.tran 30m
+.end

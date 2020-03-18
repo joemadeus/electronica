@@ -1,0 +1,12 @@
+.title 5'Order Lowpass
+V1 VIN Net-_C1-Pad1_ ac 3.3 0
+R1 0 VIN 50
+C1 Net-_C1-Pad1_ 0 12p Rser=60m
+L1 Net-_C1-Pad1_ Net-_C2-Pad1_ 56n Rser=0.250
+C2 Net-_C2-Pad1_ 0 27p Rser=35m
+L2 Net-_C2-Pad1_ VOUT 56n Rser=0.250
+C3 VOUT 0 12p Rser=60m
+R2 0 VOUT 50
+.ac lin 2500 150MEG 350MEG
+.net V(VOUT) V1
+.end

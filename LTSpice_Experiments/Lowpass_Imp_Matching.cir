@@ -1,0 +1,9 @@
+.title LC Lowpass Imp Matching
+R1 VIN  0    50
+V1 VIN  1    ac 3.3 0
+L1 1    VOUT 378.3n
+C1 VOUT 0    2.855p
+R2 VOUT 0    50
+.ac lin 250000 10MEG 300MEG
+.net V(VOUT) V1
+.end

@@ -1,0 +1,14 @@
+.title 5'Order Lowpass
+.clear
+V1 VIN  0 ac 3.3 0
+R1 VIN  1    50
+C1 1    0    13.375p RSER=50m
+L1 1    2    57.69n
+C2 2    0    27.893p RSER=40m
+L2 2    VOUT 57.69n
+C3 VOUT 0    13.375p RSER=50m
+R2 VOUT 0    50
+.ac lin 250000 50MEG 500MEG
+.net V(VOUT) V1
+.plot AC V(1) V(OUT)
+.end

@@ -1,0 +1,16 @@
+.title KiCad schematic
+V1 VIN 0 ac 3.3 0
+R1 Net-_C1-Pad1_ VIN 50
+C1 Net-_C1-Pad1_ 0 4.7p RSER=75m
+L1 Net-_C1-Pad1_ Net-_C2-Pad1_ 39n
+C2 Net-_C2-Pad1_ 0 22p RSER=45m
+L2 Net-_C2-Pad1_ Net-_C3-Pad1_ 68n
+C3 Net-_C3-Pad1_ 0 30p RSER=50m
+L3 Net-_C3-Pad1_ Net-_C4-Pad1_ 68n
+C4 Net-_C4-Pad1_ 0 22p RSER=45m
+L4 Net-_C4-Pad1_ VOUT 39n
+C5 VOUT 0 4.7p RSER=75m
+R2 0 VOUT 50
+.ac lin 100000 50MEG 500MEG
+.net V(VOUT) V1
+.end

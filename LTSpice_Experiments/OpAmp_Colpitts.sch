@@ -1,0 +1,209 @@
+EESchema Schematic File Version 4
+LIBS:LTSpice_Experiments-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM741 U1
+U 1 1 5C2F2093
+P 5850 3450
+F 0 "U1" H 5850 2950 50  0000 L CNN
+F 1 "LM741" H 5850 3050 50  0000 L CNN
+F 2 "" H 5900 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm741.pdf" H 6000 3600 50  0001 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C2F2191
+P 5500 2900
+F 0 "R2" V 5293 2900 50  0000 C CNN
+F 1 "200" V 5384 2900 50  0000 C CNN
+F 2 "" V 5430 2900 50  0001 C CNN
+F 3 "~" H 5500 2900 50  0001 C CNN
+F 4 "R" H 5500 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "200" H 5500 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5500 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5500 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C2F21E7
+P 6000 3050
+F 0 "R3" V 5793 3050 50  0000 C CNN
+F 1 "3k" V 5884 3050 50  0000 C CNN
+F 2 "" V 5930 3050 50  0001 C CNN
+F 3 "~" H 6000 3050 50  0001 C CNN
+F 4 "R" H 6000 3050 50  0001 C CNN "Spice_Primitive"
+F 5 "3k" H 6000 3050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6000 3050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6000 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C2F222A
+P 5350 3550
+F 0 "R1" V 5143 3550 50  0000 C CNN
+F 1 "1k" V 5234 3550 50  0000 C CNN
+F 2 "" V 5280 3550 50  0001 C CNN
+F 3 "~" H 5350 3550 50  0001 C CNN
+F 4 "R" H 5350 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "1k" H 5350 3550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5350 3550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5350 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5C2F230C
+P 4950 3550
+F 0 "L1" V 5140 3550 50  0000 C CNN
+F 1 "10m" V 5049 3550 50  0000 C CNN
+F 2 "" H 4950 3550 50  0001 C CNN
+F 3 "~" H 4950 3550 50  0001 C CNN
+F 4 "L" H 4950 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "10m" H 4950 3550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4950 3550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4950 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C2F2389
+P 5150 3750
+F 0 "C2" H 5265 3796 50  0000 L CNN
+F 1 "0.024u" H 5265 3705 50  0000 L CNN
+F 2 "" H 5188 3600 50  0001 C CNN
+F 3 "~" H 5150 3750 50  0001 C CNN
+F 4 "C" H 5150 3750 50  0001 C CNN "Spice_Primitive"
+F 5 "0.024u" H 5150 3750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5150 3750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C2F23EA
+P 4750 3750
+F 0 "C1" H 4865 3796 50  0000 L CNN
+F 1 "0.24u" H 4865 3705 50  0000 L CNN
+F 2 "" H 4788 3600 50  0001 C CNN
+F 3 "~" H 4750 3750 50  0001 C CNN
+F 4 "C" H 4750 3750 50  0001 C CNN "Spice_Primitive"
+F 5 "0.24u" H 4750 3750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4750 3750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 5C2F25F1
+P 5450 3250
+F 0 "#GND01" H 5450 3150 50  0001 C CNN
+F 1 "0" H 5450 3336 50  0000 C CNN
+F 2 "" H 5450 3250 50  0001 C CNN
+F 3 "~" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5C2F2659
+P 5750 2600
+F 0 "#PWR01" H 5750 2450 50  0001 C CNN
+F 1 "VCC" H 5767 2773 50  0000 C CNN
+F 2 "" H 5750 2600 50  0001 C CNN
+F 3 "" H 5750 2600 50  0001 C CNN
+F 4 "I" H 5750 2600 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 3.3" H 5750 2600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5750 2600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3550 5150 3550
+Wire Wire Line
+	5150 3600 5150 3550
+Connection ~ 5150 3550
+Wire Wire Line
+	5150 3550 5200 3550
+Wire Wire Line
+	4750 3600 4750 3550
+Wire Wire Line
+	4750 3550 4800 3550
+Wire Wire Line
+	5500 3550 5550 3550
+Wire Wire Line
+	4750 3900 4750 4050
+Wire Wire Line
+	4750 4050 5150 4050
+Wire Wire Line
+	5750 4050 5750 3750
+$Comp
+L pspice:0 #GND02
+U 1 1 5C2F27BB
+P 5750 4200
+F 0 "#GND02" H 5750 4100 50  0001 C CNN
+F 1 "0" H 5750 4287 50  0000 C CNN
+F 2 "" H 5750 4200 50  0001 C CNN
+F 3 "~" H 5750 4200 50  0001 C CNN
+	1    5750 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4050 5750 4200
+Connection ~ 5750 4050
+Wire Wire Line
+	5150 3900 5150 4050
+Connection ~ 5150 4050
+Wire Wire Line
+	5150 4050 5750 4050
+Wire Wire Line
+	5550 3350 5450 3350
+Wire Wire Line
+	5450 3350 5450 3250
+Wire Wire Line
+	6150 3050 6300 3050
+Wire Wire Line
+	6300 3050 6300 3450
+Wire Wire Line
+	6300 3450 6150 3450
+Wire Wire Line
+	5650 2900 6500 2900
+Wire Wire Line
+	6500 2900 6500 3450
+Wire Wire Line
+	6500 3450 6300 3450
+Connection ~ 6300 3450
+Wire Wire Line
+	5850 3050 5500 3050
+Wire Wire Line
+	5500 3050 5500 3550
+Connection ~ 5500 3550
+Wire Wire Line
+	5350 2900 4750 2900
+Wire Wire Line
+	4750 2900 4750 3550
+Connection ~ 4750 3550
+Wire Wire Line
+	5750 2600 5750 3150
+Text Label 6650 3450 0    50   ~ 0
+OUT
+Wire Wire Line
+	6650 3450 6500 3450
+Connection ~ 6500 3450
+$EndSCHEMATC

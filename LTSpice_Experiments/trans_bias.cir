@@ -1,0 +1,12 @@
+.title KiCad schematic
+.include "/Users/joseph.rose/Development/electronica/Spice/transistors.spice"
+V1 VIN 0 dc 5
+Q1 QBASE V1 QEMIT ONSEMI_pzt2222at1
+R1 V1 QBASE 9.1k
+R2 QBASE 0 4.7k
+R3 QEMIT 0 100
+R4 QCOLL VIN 1
+R5 OUT QCOLL 1
+ 
+.dc V1 0 10 0.1
+.end

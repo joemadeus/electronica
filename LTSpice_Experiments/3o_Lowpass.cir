@@ -1,0 +1,10 @@
+.title KiCad schematic
+V1 VIN 0 ac 3.3 0
+R1 Net-_C1-Pad1_ VIN 50
+C1 Net-_C1-Pad1_ 0 0.1u
+L1 Net-_C1-Pad1_ VOUT 1u
+C2 VOUT 0 0.1u
+R2 0 VOUT 50
+.ac lin 100000 1 500MEG
+.net V(VOUT) V1
+.end
